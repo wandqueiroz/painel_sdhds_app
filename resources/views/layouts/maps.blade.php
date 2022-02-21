@@ -1,14 +1,5 @@
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-crossorigin=""/>
 
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-crossorigin=""></script>
-
-<script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
-<script src="js/plotly-2.9.0.min.js"></script>
-
+<div id="map" style="height:100vh"> </div>
 <script type="text/javascript">
     var greenIcon = new L.Icon({
       iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -91,4 +82,3 @@ crossorigin=""></script>
   L.control.layers(baseMaps, overlayMaps).addTo(map);
   </script>
 
-<div id="map" style="height: 300px"></div>

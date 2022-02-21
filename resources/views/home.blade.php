@@ -88,9 +88,11 @@
                         </ul>
                     </div>
                 </div>
+                <div id="map" style="height: 180px; z-index:1"> OPAAAA</div>
                 <div class="card-body">
                     <div class="tab-content p-0">
-                        @include('layouts/maps')
+
+                        
          
                     </div>
                 </div>
@@ -1136,3 +1138,4 @@
     </div>
 </div>
 @endsection --}}
+
