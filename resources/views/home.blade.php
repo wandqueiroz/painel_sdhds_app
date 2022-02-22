@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <p>Bem vind<strong>x</strong> ao painel de sala de situação</p>
     <div class="row">
         <div class="col-lg-3 col-6">
 
@@ -74,217 +74,19 @@
             <div class="card">
                 <div class="card-header ui-sortable-handle" style="cursor: move;">
                     <h3 class="card-title">
-                        <i class="fas fa-chart-pie mr-1"></i>
-                        Sales
+                        <i class="fas fa fa-map mr-1"></i>
+                        Visualização em mapa
                     </h3>
                     <div class="card-tools">
-                        <ul class="nav nav-pills ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#revenue-chart" data-toggle="tab">Area</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#sales-chart" data-toggle="tab">Donut</a>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
-                <div id="map" style="height: 180px; z-index:1"> OPAAAA</div>
                 <div class="card-body">
                     <div class="tab-content p-0">
-
-                        
-         
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card direct-chat direct-chat-primary">
-                <div class="card-header ui-sortable-handle" style="cursor: move;">
-                    <h3 class="card-title">Direct Chat</h3>
-                    <div class="card-tools">
-                        <span title="3 New Messages" class="badge badge-primary">3</span>
-                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                            <i class="fas fa-comments"></i>
-                        </button>
-                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card-body">
-
-                    <div class="direct-chat-messages">
-
-                        <div class="direct-chat-msg">
-                            <div class="direct-chat-infos clearfix">
-                                <span class="direct-chat-name float-left">Alexander Pierce</span>
-                                <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                            </div>
-
-                            <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-
-                            <div class="direct-chat-text">
-                                Is this template really for free? That's unbelievable!
-                            </div>
-
-                        </div>
-
-
-                        <div class="direct-chat-msg right">
-                            <div class="direct-chat-infos clearfix">
-                                <span class="direct-chat-name float-right">Sarah Bullock</span>
-                                <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                            </div>
-
-                            <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-
-                            <div class="direct-chat-text">
-                                You better believe it!
-                            </div>
-
-                        </div>
-
-
-                        <div class="direct-chat-msg">
-                            <div class="direct-chat-infos clearfix">
-                                <span class="direct-chat-name float-left">Alexander Pierce</span>
-                                <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
-                            </div>
-
-                            <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-
-                            <div class="direct-chat-text">
-                                Working with AdminLTE on a great new app! Wanna join?
-                            </div>
-
-                        </div>
-
-
-                        <div class="direct-chat-msg right">
-                            <div class="direct-chat-infos clearfix">
-                                <span class="direct-chat-name float-right">Sarah Bullock</span>
-                                <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
-                            </div>
-
-                            <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-
-                            <div class="direct-chat-text">
-                                I would love to.
-                            </div>
-
-                        </div>
+                        <div id="map" style="width: auto; height: 500px"></div>
 
                     </div>
-
-
-                    <div class="direct-chat-contacts">
-                        <ul class="contacts-list">
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            Count Dracula
-                                            <small class="contacts-list-date float-right">2/28/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">How have you been? I was...</span>
-                                    </div>
-
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            Sarah Doe
-                                            <small class="contacts-list-date float-right">2/23/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">I will be waiting for...</span>
-                                    </div>
-
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            Nadia Jolie
-                                            <small class="contacts-list-date float-right">2/20/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">I'll call you back at...</span>
-                                    </div>
-
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            Nora S. Vans
-                                            <small class="contacts-list-date float-right">2/10/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">Where is your new...</span>
-                                    </div>
-
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            John K.
-                                            <small class="contacts-list-date float-right">1/27/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">Can I take a look at...</span>
-                                    </div>
-
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            Kenneth M.
-                                            <small class="contacts-list-date float-right">1/4/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">Never mind I found...</span>
-                                    </div>
-
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
                 </div>
-
-                <div class="card-footer">
-                    <form action="#" method="post">
-                        <div class="input-group">
-                            <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                            <span class="input-group-append">
-                                <button type="button" class="btn btn-primary">Send</button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-
             </div>
 
 
@@ -1106,11 +908,145 @@
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
 @stop
 
 @section('js')
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <script>
         console.log('Hi!');
+
+        var greenIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        var orangeIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        var redIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        var barra = L.marker([-3.7084337, -38.5800338], {
+                icon: greenIcon
+            }).bindPopup('CRAS BARRA DO CEARÁ'),
+            jacarecanga = L.marker([-3.7212433, -38.5389852], {
+                icon: greenIcon
+            }).bindPopup('CRAS JACARECANGA'),
+            lagamar = L.marker([-3.7613805, -38.5112225], {
+                icon: greenIcon
+            }).bindPopup('CRAS LAGAMAR'),
+            futuro = L.marker([-3.7644719, -38.4403997], {
+                icon: greenIcon
+            }).bindPopup('CRAS PRAIA DO FUTURO'),
+            mucuripe = L.marker([-3.7268639, -38.4778337], {
+                icon: greenIcon
+            }).bindPopup('CRAS MUCURIPE'),
+            serviluz = L.marker([-3.7163742, -38.4651728], {
+                icon: greenIcon
+            }).bindPopup('CRAS SERVILUZ'),
+            bela_vista = L.marker([-3.7519851, -38.5639419], {
+                icon: greenIcon
+            }).bindPopup('CRAS BELA VISTA'),
+            quintino_cunha = L.marker([-3.7318696, -38.6008863], {
+                icon: greenIcon
+            }).bindPopup('CRAS QUINTINO CUNHA'),
+            ant_bezerra = L.marker([-3.7374242, -38.5902629], {
+                icon: greenIcon
+            }).bindPopup('CRAS ANTONIO BEZERRA'),
+            pres_kennedy = L.marker([-3.7291766, -38.5705202], {
+                icon: greenIcon
+            }).bindPopup('CRAS PRESIDENTE KENNEDY'),
+            joao_23 = L.marker([-3.7746614, -38.580733], {
+                icon: greenIcon
+            }).bindPopup('CRAS JOAO XXIII'),
+            messejana = L.marker([-3.8306437, -38.4676208], {
+                icon: greenIcon
+            }).bindPopup('CRAS MESSEJANA'),
+            pres_kennedy = L.marker([-3.7291766, -38.5705202], {
+                icon: greenIcon
+            }).bindPopup('CRAS PRESIDENTE KENNEDY'),
+            pres_kennedy = L.marker([-3.7291766, -38.5705202], {
+                icon: greenIcon
+            }).bindPopup('CRAS PRESIDENTE KENNEDY'),
+            pres_kennedy = L.marker([-3.7291766, -38.5705202], {
+                icon: greenIcon
+            }).bindPopup('CRAS PRESIDENTE KENNEDY');
+
+        var cras = L.layerGroup([barra, jacarecanga, lagamar, futuro, mucuripe, serviluz, bela_vista, quintino_cunha,
+            ant_bezerra, pres_kennedy, joao_23, messejana
+        ]);
+
+        var refeitorio1 = L.marker([-3.7227971, -38.5368819], {
+            icon: redIcon
+        }).bindPopup('REFEITORIO SOCIAL');
+        var refeitorios = L.layerGroup([refeitorio1]);
+
+        var nucad1 = L.marker([-3.7320829, -38.5460421], {
+            icon: orangeIcon
+        }).bindPopup('NUCAD I');
+        var nucad2 = L.marker([-3.75865, -38.4820032], {
+            icon: orangeIcon
+        }).bindPopup('NUCAD II');
+        var nucad3 = L.marker([-3.7396156, -38.5563457], {
+            icon: orangeIcon
+        }).bindPopup('NUCAD III');
+        var nucad4 = L.marker([-3.79057, -38.5403766], {
+            icon: orangeIcon
+        }).bindPopup('NUCAD IV');
+        var nucads = L.layerGroup([nucad1, nucad2, nucad3, nucad4]);
+
+        var vapt_antoniob = L.marker([-3.7372669, -38.5851197], {
+            icon: redIcon
+        }).bindPopup('VAPT VUPT ANT BEZERRA');
+        var vapt_vupts = L.layerGroup([vapt_antoniob]);
+
+        var layoutMap = L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=UnzREsu8qEQLLAK8XZGn', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+        });
+
+        var map = L.map('map', {
+            //center: [-3.76838, -38.535683],
+            center: [-3.771421, -38.538151],
+            zoom: 12,
+            layers: [layoutMap, cras, refeitorios, nucads, vapt_vupts]
+        });
+
+
+
+        var baseMaps = {
+            "OpenStreetMap": layoutMap
+
+        };
+
+        var overlayMaps = {
+            "<strong>CRAS</strong>": cras,
+            "<strong>REFEITORIOS</strong>": refeitorios,
+            "<strong>NUCADS</strong>": nucads,
+            "<strong>NUCADS</strong>": vapt_vupts
+        };
+
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
     </script>
 @stop
 
@@ -1138,4 +1074,3 @@
     </div>
 </div>
 @endsection --}}
-
