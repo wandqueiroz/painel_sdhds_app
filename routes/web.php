@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,10 +17,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/maps', function () {
-    return view('layouts/maps');
+
+/* Route::get('/admin_cras', function () {
+    return view('pages/admin_cras');
+});
+ */
+Route::get('/admin2', function () {
+    return view('pages/admin_creas');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/admin_cras', [App\Http\Controllers\CadastrarController::class, 'index'])->name('admin_cras');

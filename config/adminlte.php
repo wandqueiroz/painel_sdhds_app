@@ -248,10 +248,49 @@ return [
         ],
         [
             'text'        => 'pages',
-            'url'         => 'admin/pages',
+            'url'         => 'admin3',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
+        ],
+        [
+            'text'    => 'Inserir Dados',
+            'icon'    => 'fas fa-fw fa-upload',
+            'submenu' => [
+                [
+                    'text' => 'Sociais/Educacionais',
+                    'icon'    => 'fas fa-fw fa-handshake',
+                    'submenu' => [ 
+                        [
+                            'text' => 'CRAS',
+                            'url'  => 'admin_cras',
+        
+                        ],
+                        [
+                            'text' => 'CREAS',
+                            'url'  => 'admin2',
+        
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Nutricionais',
+                    'icon'    => 'fas fa-fw fa-utensils',
+                    'submenu' => [
+                    
+                        [
+                            'text' => 'Marmitas',
+                            'url'  => '',
+        
+                        ],
+                        [
+                            'text' => 'Refeitório Social',
+                            'url'  => '',
+        
+                        ],
+                    ],
+                ],
+            ],
         ],
         ['header' => 'account_settings'],
         [

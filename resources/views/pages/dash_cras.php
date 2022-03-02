@@ -72,17 +72,12 @@
 
         <section class="col-lg-7 connectedSortable ui-sortable">
 
-            <div class="card bg-gradient-light">
+            <div class="card">
                 <div class="card-header ui-sortable-handle" style="cursor: move;">
                     <h3 class="card-title">
                         <i class="fas fa fa-map mr-1"></i>
                         Visualização em mapa
                     </h3>
-                    <div class="card-tools">
-                        <button type="button" class="btn btn-light btn-sm" data-card-widget="collapse" title="Collapse">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                    </div>
 
                 </div>
                 <div class="card-body">
@@ -106,7 +101,7 @@
                     </h3>
 
                     <div class="card-tools">
-                        <button type="button" class="btn btn-light btn-sm" data-card-widget="collapse" title="Collapse">
+                        <button type="button" class="btn btn-info btn-sm" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
                         </button>
                     </div>
