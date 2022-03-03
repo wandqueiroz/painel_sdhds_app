@@ -26,6 +26,10 @@ Route::get('/admin2', function () {
     return view('pages/admin_creas');
 });
 
+Route::get('/dashall', function () {
+    return view('pages/dash_all');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
