@@ -16,8 +16,9 @@
                     <h3>150</h3>
                     <p>Meta proposta</p>
                 </div>
+                
                 <div class="icon">
-                    <i class="ion ion-bag"></i>
+                    <i class="fa fa-thumb-tack"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -32,7 +33,7 @@
                     <p>Ótimo Desempenho</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-stats-bars"></i>
+                    <i class="fas fa-arrow-alt-circle-up"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -46,7 +47,7 @@
                     <p>Médio Desempenho</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-person-add"></i>
+                    <i class="fas fa-exclamation-circle"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -60,7 +61,7 @@
                     <p>Baixo Desempenho</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
+                    <i class="fas fa-arrow-alt-circle-down"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -206,6 +207,8 @@
     @stop
 
     @section('js')
+    <script src="https://kit.fontawesome.com/d8e2fcabdf.js" crossorigin="anonymous"></script>
+
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
                 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
                 crossorigin="">
