@@ -7,14 +7,14 @@
 @stop
 
 @section('content')
-    <p>Bem vind<strong>x</strong> ao painel de sala de situação</p>
+    <p>Painel de sala de situação</p>
     <div class="row">
         <div class="col-lg-3 col-6">
 
             <div class="small-box bg-info">
                 <div class="inner">
                     <h3>150</h3>
-                    <p>Total de Demandas</p>
+                    <p>Meta proposta</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-bag"></i>
@@ -28,7 +28,7 @@
             <div class="small-box bg-success">
                 <div class="inner">
                     {{-- <h3>53<sup style="font-size: 20px">%</sup></h3> --}}
-                    <h3>53</h3>
+                    <h3>12</h3>
                     <p>Ótimo Desempenho</p>
                 </div>
                 <div class="icon">
@@ -42,7 +42,7 @@
 
             <div class="small-box bg-warning">
                 <div class="inner">
-                    <h3>44</h3>
+                    <h3>4</h3>
                     <p>Médio Desempenho</p>
                 </div>
                 <div class="icon">
@@ -56,7 +56,7 @@
 
             <div class="small-box bg-danger">
                 <div class="inner">
-                    <h3>65</h3>
+                    <h3>2</h3>
                     <p>Baixo Desempenho</p>
                 </div>
                 <div class="icon">
@@ -102,7 +102,7 @@
                 <div class="card-header border-0 ui-sortable-handle" style="cursor: move;">
                     <h3 class="card-title">
                         <i class="fas fa-map-marker-alt mr-1"></i>
-                        Visitors
+                        Visualização gráfica
                     </h3>
 
                     <div class="card-tools">
@@ -121,7 +121,7 @@
             </div>
 
 
-            <div class="card bg-gradient-primary">
+{{--             <div class="card bg-gradient-primary">
                 <div class="card-header border-0 ui-sortable-handle" style="cursor: move;">
                     <h3 class="card-title">
                         <i class="fas fa-th mr-1"></i>
@@ -141,7 +141,7 @@
 
                 </div>
 
-            </div>
+            </div> --}}
 
         </section>
 
@@ -235,7 +235,7 @@
                     'Médio'
                 ],
                 datasets: [{
-                    data: [300, 50, 100],
+                    data: [2, 12, 4],
                     backgroundColor: [
                         'rgb(255, 99, 132)',
                         'rgb(96, 209, 120)',

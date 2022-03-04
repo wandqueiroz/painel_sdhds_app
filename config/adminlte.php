@@ -246,12 +246,23 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        [
+      /*   [
             'text'        => 'pages',
             'url'         => 'admin3',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
+        ], */
+        [
+            'text'    => 'Dashboard',
+            'icon'    => 'fas fa-fw fa-chart-line',
+            'submenu' => [
+                [
+                    'text' => 'Nutricionais',
+                    'icon'    => 'fas fa-fw fa-utensils',
+                    'url'  => 'dashall',
+                ],
+            ],
         ],
         [
             'text'    => 'Inserir Dados',
@@ -260,35 +271,12 @@ return [
                 [
                     'text' => 'Sociais/Educacionais',
                     'icon'    => 'fas fa-fw fa-handshake',
-                    'submenu' => [ 
-                        [
-                            'text' => 'CRAS',
-                            'url'  => 'admin_cras',
-        
-                        ],
-                        [
-                            'text' => 'CREAS',
-                            'url'  => 'admin2',
-        
-                        ],
-                    ],
+                    'url'  => 'admincras',
                 ],
                 [
                     'text' => 'Nutricionais',
                     'icon'    => 'fas fa-fw fa-utensils',
-                    'submenu' => [
-                    
-                        [
-                            'text' => 'Marmitas',
-                            'url'  => '',
-        
-                        ],
-                        [
-                            'text' => 'Refeitório Social',
-                            'url'  => '',
-        
-                        ],
-                    ],
+                    'url'  => '',
                 ],
             ],
         ],

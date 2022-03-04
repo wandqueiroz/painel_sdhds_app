@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,17 +19,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/teste', function () {
+    return 'login';
+});
+
 /* Route::get('/admin_cras', function () {
     return view('pages/admin_cras');
 });
  */
-Route::get('/admin2', function () {
-    return view('pages/admin_creas');
+Route::get('/cosan', function () {
+    return view('pages/dash_cosan');
 });
 
-Route::get('/dashall', function () {
-    return view('pages/dash_all');
+Route::get('/admincras', function () {
+    return view('pages/admin_cras');
 });
+
+
+Route::resource('dashall', CardController::class);
+
+
 
 Auth::routes();
 
