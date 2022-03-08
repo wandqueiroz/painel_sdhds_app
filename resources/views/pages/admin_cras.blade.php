@@ -19,7 +19,7 @@
     <form>
         <div class="form-group">
             <label for="inputState">Informação 1</label>
-            <select id="inputState" class="form-control">
+            <select id="language" class="form-control">
                 <option value="0">Selecione...</option>
                 <option value="1" selected>CRAS</option>
                 <option value="2">CREAS</option>
@@ -74,7 +74,17 @@
 
 
 @stop
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    console.log('oiiiiiiii');
+   
+
+console.log('oiiiiiiii');
+var teste = $('#language :selected').text();
+console.log(teste);
+
+
+/* var select = document.getElementById('meuid');
+var value = select.options[select.selectedIndex].value;
+console.log(value); */
 </script>

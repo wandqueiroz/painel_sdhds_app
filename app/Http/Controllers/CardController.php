@@ -13,7 +13,19 @@ class CardController extends Controller
     {
         //subistituir por conexão no banco
         $indicador = 'Distribuição de Refeições';
-        $equipamentos = ['Janaina Dutra'=>135, 'Restaurante Popular'=>784, 'Cuca'=>335, 'Bom Jardim'=>345, 'Messejana'=>134, 'EHC Parangaba'=>218, 'EHP Dom Manuel'=>740, 'EHC Centro'=>807, 'Refeitório Social'=>876];
+        $equipamentos = [
+            'Janaina Dutra'=>rand(100, 900),
+            'Restaurante Popular'=>rand(100, 900),
+            'Cuca'=>rand(100, 900),
+            'Bom Jardim'=>rand(100, 900),
+            'Messejana'=>rand(100, 900),
+            'EHC Parangaba'=>rand(100, 900),
+            'EHP Dom Manuel'=>rand(100, 900),
+            'EHC Centro'=>rand(100, 900),
+            'Refeitório Social'=>rand(100, 900)
+        ];
+
+        asort($equipamentos);
 
         return view('pages/dash_all', compact('equipamentos', 'indicador'));
 
@@ -27,7 +39,7 @@ class CardController extends Controller
      */
     public function create()
     {
-        return "criando card";
+        return view("pages/admin_cosan");
     }
 
     /**
@@ -49,12 +61,28 @@ class CardController extends Controller
      */
     public function show($id)
     {
+        $indicador = 'Distribuição de Refeições';
+        $equipamentos = ['Janaina Dutra', 'Restaurante Popular', 'Cuca', 'Bom Jardim', 'Messejana', 'EHC Parangaba', 'EHP Dom Manuel', 'EHC Centro', 'Refeitório Social'];
+
+//        $equipamentos = [
+//            'Janaina Dutra'=>[],
+//            'Restaurante Popular'=>[],
+//            'Cuca'=>[],
+//            'Bom Jardim'=>[],
+//            'Messejana'=>[],
+//            'EHC Parangaba'=>[],
+//            'EHP Dom Manuel'=>[],
+//            'EHC Centro'=>[],
+//            'Refeitório Social'=>[]
+//        ];
+        if (in_array("$id", $equipamentos)) {
+            return view("pages/dash_cosan", compact('equipamentos', 'indicador', 'id'));
+        } else {
+            return "Sem dados para exibir";
+        };
 
         //subistituir por conexão no banco
-        $indicador = 'Distribuição de Refeições';
-        $equipamentos = ['Janaina Dutra'=>135, 'Restaurante Popular'=>784, 'Cuca'=>335, 'Bom Jardim'=>345, 'Messejana'=>134, 'EHC Parangaba'=>218, 'EHP Dom Manuel'=>740, 'EHC Centro'=>807, 'Refeitório Social'=>876];
 
-        return view("pages/dash_show/{id}", compact('equipamentos', 'indicador', 'id'));
 
     }
 

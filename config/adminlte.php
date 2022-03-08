@@ -276,7 +276,7 @@ return [
                 [
                     'text' => 'Nutricionais',
                     'icon'    => 'fas fa-fw fa-utensils',
-                    'url'  => '',
+                    'url'  => '/dashall/create',
                 ],
             ],
         ],

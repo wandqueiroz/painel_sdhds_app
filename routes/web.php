@@ -27,8 +27,8 @@ Route::get('/teste', function () {
     return view('pages/admin_cras');
 });
  */
-Route::get('/cosan', function () {
-    return view('pages/dash_cosan');
+Route::get('/admincosan', function () {
+    return view('pages/admin_cosan');
 });
 
 Route::get('/admincras', function () {
