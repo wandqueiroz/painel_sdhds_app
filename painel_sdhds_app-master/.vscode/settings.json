@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "VisualStudioExptTeam.vscodeintellicode",
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    }
+}
